@@ -6,7 +6,7 @@ export class BoardCanvas {
       addListBtn: "//button[text()='Add list']",
       cardValue: "[data-testid='list-card-composer-textarea']",
       addCardBtn: "//button[text()='Add card']",
-      tableBody: "[data-testid='table-body']",
+      tableBody: "[data-testid='table-body']"
     };
     return $(selector[name]);
   }

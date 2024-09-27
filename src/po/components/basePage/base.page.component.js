@@ -5,7 +5,7 @@ export class BasePageComponents {
       userName: "#username",
       continueBtn: "#login-submit",
       password: "#password",
-      logInBtn: ".css-178ag6o",
+      logInBtn: ".css-178ag6o"
     };
     return $(selector[name]);
   }
