@@ -6,15 +6,15 @@ export const config = {
     {
       browserName: "chrome",
       "goog:chromeOptions": {
-        args: ["headless", "disable-gpu"],
-      },
+        args: ["headless", "disable-gpu"]
+      }
     },
     {
       browserName: "firefox",
       "moz:firefoxOptions": {
-        args: ["-headless"],
-      },
-    },
+        args: ["-headless"]
+      }
+    }
   ],
   logLevel: "error",
   bail: 0,
@@ -28,9 +28,9 @@ export const config = {
   mochaOpts: {
     ui: "bdd",
     timeout: 60000,
-    retries: 2,
+    retries: 2
   },
   before: function (capabilities, specs) {
     browser.setWindowSize(1920, 1080);
-  },
+  }
 };

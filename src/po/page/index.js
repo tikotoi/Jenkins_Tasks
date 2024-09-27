@@ -11,7 +11,7 @@ function pages(name) {
   const items = {
     basePage: new Basepage(),
     homePage: new HomePage(),
-    boardPage: new BoardPage(),
+    boardPage: new BoardPage()
   };
   return items[name];
 }

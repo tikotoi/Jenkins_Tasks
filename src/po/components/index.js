@@ -11,5 +11,5 @@ export {
   BoardCanvas,
   HeaderComponent,
   RandomTitleGenerator,
-  HomeBodyComponents,
+  HomeBodyComponents
 };

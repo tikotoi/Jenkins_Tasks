@@ -6,7 +6,7 @@ export class HeaderComponent {
       logo: "//a[@aria-label='Back to home']",
       search: "//input[@placeholder='Search']",
       searchInput: "//input[@placeholder='Search Trello']",
-      searchResult: ".css-1a9l0m2",
+      searchResult: ".css-1a9l0m2"
     };
     return $(selector[name]);
   }

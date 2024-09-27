@@ -1,5 +1,5 @@
 import { BasePageComponents, HeaderComponent } from "../components/index.js";
-import {assert} from "chai";
+import { assert } from "chai";
 
 export class Basepage {
   constructor() {
@@ -10,7 +10,7 @@ export class Basepage {
   async open() {
     await browser.url("https://trello.com/");
   }
-  async logInSuccessfully (userName, password) {
+  async logInSuccessfully(userName, password) {
     await this.open();
     await this.basePageComponents.item("logIn").waitForDisplayed();
     await this.basePageComponents.item("logIn").click();
@@ -21,6 +21,6 @@ export class Basepage {
     await this.basePageComponents.item("logInBtn").click();
     const accountTitle = await this.headerComponent.item("account");
     const titleAttribute = await accountTitle.getAttribute("title");
-    assert.equal(titleAttribute, "Wdio Task (wdiotask)", `User hasn't logged in successfully`);
-  };
+    assert.equal(titleAttribute, "Wdio Task (wdiotask)", "User hasn't logged in successfully");
+  }
 }
